@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kaprekar Constant Numbers</title>
+  <style>
+    /* Same styling as file 1 — reused for all */
+  * { 
+    margin: 0;
+     padding: 0; 
+     box-sizing: border-box; 
+     font-family: 'Segoe UI', sans-serif;
+  }
+    body { 
+      background: #eef1f4; 
+      color: #333; 
+      display: flex; 
+      justify-content: center; 
+      padding: 40px; 
+      gap: 30px; 
+    }
+    .main { 
+      max-width: 700px; 
+      background: #fff; 
+      padding: 30px; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+      flex: 1; 
+    }
+    h1 { 
+      color: #006699; 
+      margin-bottom: 20px; 
+    }
+    input, button { 
+      width: 100%; 
+      padding: 10px; 
+      margin: 10px 0; 
+      border-radius: 5px; 
+      border: 1px solid #ccc; 
+      font-size: 1rem; 
+    }
+    button { 
+      background: #007acc; 
+      color: #fff; 
+      border: none; 
+      cursor: pointer; 
+      transition: 0.3s; 
+    }
+    button:hover { 
+      background: #005f99; 
+    }
+    #output { 
+      margin-top: 20px; 
+      background: #f9f9f9; 
+      padding: 15px; 
+      border-radius: 5px; 
+    }
+    .menu { 
+      width: 250px; 
+      background: #fff; 
+      padding: 25px; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+      position: sticky; 
+      top: 40px; 
+    }
+    .menu h1 { 
+      font-size: 1.5rem; 
+      margin-bottom: 20px; 
+      color: #444; 
+    }
+    .menu ul { 
+      list-style: none; 
+    }
+    .menu li { 
+      margin: 15px 0; 
+    }
+    .menu a { 
+      text-decoration: none; 
+      color: #007acc; 
+      transition: 0.3s; 
+    }
+    .menu a:hover { 
+      color: #005580; 
+      transform: translateX(5px); 
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h2>Kaprekar's Constant Numbers (100 to 99999)</h2>
+    <button onclick="findKaprekarNumbers()">Find all Kaprekar Numbers</button>
+    <div id="output"></div>
+  </div>
+  <div class="menu">
+    <h1>Menu</h1>
+    <ul>
+      <li><a href="Kaprekar_task.html" target="_parent">Home</a></li>
+      <li><a href="Kaprekar_Constant.html" target="_blank">Find Kaprekar Constant</a></li>
+      <li><a href="Check_Kaprekar_Num.html" target="_blank">Check if a Number is Kaprekar</a></li>
+      <li><a href="Kaprekar_Num_list.html" target="_blank">List All Kaprekar Numbers (1 to MAX)</a></li>
+    </ul>
+  </div>
+  <script src="Kaprekar_Const_Num.js"></script>
+</body>
+</html>

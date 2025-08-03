@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaprekar Constant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #eef1f4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 30px;
+    }
+    .main {
+      flex: 1;
+      max-width: 700px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #006699;
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #005f99;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 1rem;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .menu {
+      width: 250px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 40px;
+      height: fit-content;
+    }
+    .menu h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #444;
+    }
+    .menu ul {
+      list-style-type: none;
+    }
+    .menu li {
+      margin: 15px 0;
+    }
+    .menu a {
+      text-decoration: none;
+      color: #007acc;
+      font-size: 1rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .menu a:hover {
+      color: #005580;
+      transform: translateX(5px);
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>Kaprekar Constant</h1>
+    <input type="text" id="inputNumber" placeholder="Enter a 3 to 5 digit number">
+    <button onclick="startKaprekar()">Start Kaprekar Routine</button>
+    <div id="output"></div>
+  </div>
+
+  <div class="menu">
+    <h1>Menu</h1>
+    <ul>
+      <li><a href="Kaprekar_task.html">Home</a></li>
+      <li><a href="Kaprekar_Const_Num.html" target="_blank">Find Kaprekar's Constant Numbers (100–99999)</a></li>
+      <li><a href="Check_Kaprekar_Num.html" target="_blank">Check if a Number is Kaprekar</a></li>
+      <li><a href="Kaprekar_Num_list.html" target="_blank">List All Kaprekar Numbers (1 to MAX)</a></li>
+    </ul>
+  </div>
+  <script src="Kaprekar_Constant.js"></script>
+</body>
+</html>
